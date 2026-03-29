@@ -1,0 +1,17 @@
+class Solution {
+    /**
+     * @param {number[]} nums
+     * @return {boolean}
+     */
+    hasDuplicate(nums) {
+        const numSet = new Set();
+        for(let n of nums) {
+            if(numSet.has(n))
+                return true;
+            else 
+                numSet.add(n)
+
+        }
+        return false;
+    }
+}
